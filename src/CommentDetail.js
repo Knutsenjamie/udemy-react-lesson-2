@@ -1,7 +1,7 @@
 import React from 'react';
 import faker from 'faker';
 
-const CommentDetail = () => {
+const CommentDetail = (props) => {
     return (
         <div className="comment">
                 <a href="/" className="avatar">
@@ -10,7 +10,7 @@ const CommentDetail = () => {
                 {/* the image tag above shows how you access certain elements from faker js. Simply access faker, then add .(type you want to access) and . (attribute of said type you wish to access) */}
                 <div className="content">
                     <a href="/" className="author">
-                        Sam
+                        {props.author}
                     </a>
                     <div className="metadata">
                         <span className="date">
